@@ -1,0 +1,136 @@
+//顶部
+body{
+  background-color: #559664;
+}
+#bg_header{
+  height: 50px;
+  width: 100%;
+  background-color:#fff;
+  padding-left:5%;
+  padding-right:10%;
+  position:fixed;
+  top:0px;
+  left:0px;
+  border-bottom: 1px solid #ccc;
+  transition:all 1s;
+  z-index: 999;
+  >.headleft{
+    height: 100%;
+    width: 45%;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 16px;
+    >em{
+      font-size:12px;
+      color:#6A6959;
+    }
+  }
+  >.headright{
+    height: 100%;
+    width: 45%;
+    line-height: 50px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  >.wrong{
+    width: 20px;
+    height: 20px;
+    border-radius:50%;
+    background-color: #E6FDFF;
+    position:absolute;
+    right:20px;
+    top:50%;
+    text-align: center;
+    line-height: 20px;
+    cursor:pointer;
+    transform:translateY(-50%);
+  }
+}
+#bg_header:hover{
+  box-shadow:0px 3px 3px 2px #1CC024 ;
+}
+#bg_bgc{
+  height: 400px;
+  width: 100%;
+  background:url("../images/bg1.jpg") no-repeat center center;
+}
+//顶部导航栏
+.navbar-default{
+  position:absolute;
+  top:350px;
+  left:0px;
+  width: 100%;
+  background-image:linear-gradient(to top,#307F41,#327D42 );
+  border:0;
+  .navbar-toggle,.navbar-toggle:focus{
+    background-color:#fff;
+    border: none;
+  }
+  .navbar-brand,.navbar-brand:hover,.navbar-brand:focus{
+    color:#fff;
+    //-webkit-box-reflect: below -3px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(white));
+  }
+  //导航条
+  .navbar-nav{
+    >li{
+      >a,a:hover,a:focus{
+        color:#fff;
+        border: 0;
+      }
+    }
+    >.active{
+      >a,a:hover,a:focus{
+        color:green;
+        background-color:#fff;
+      }
+    }
+  }
+}
+//留言板样式
+#bg_massage{
+  width: 100%;
+  margin-top:20px;
+  padding:0px 30px;
+  >.boad{
+    width: 100%;
+    height: 30px;
+    color:#fff;
+    font-size: 16px;
+  }
+  >.text{
+    width: 100%;
+    background-color: #fff;
+    padding: 1px;
+    >input:first-of-type{
+      width: 85%;
+      height: 40px;
+      border:1px solid #559664;
+    }
+    >input:last-of-type{
+      width: 15%;
+      height: 40px;
+      background-color:#559664;
+      color:#fff;
+    }
+  }
+}
+//留言信息
+#words{
+  width: 100%;
+  background-color: #fff;
+  >ul{
+    width: 80%;
+    margin: auto;
+    >.f_left{
+      width: 60%;
+      height: 80px;
+      background-color:red;
+    }
+    >.f_right{
+      width: 60%;
+      height:80px;
+      background-color:greenyellow;
+    }
+  }
+}

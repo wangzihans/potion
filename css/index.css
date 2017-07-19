@@ -1,0 +1,83 @@
+#bg_header {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  padding-left: 5%;
+  padding-right: 10%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  border-bottom: 1px solid #ccc;
+  transition: all 1s;
+  z-index: 999;
+}
+#bg_header > .headleft {
+  height: 100%;
+  width: 45%;
+  line-height: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+}
+#bg_header > .headleft > em {
+  font-size: 12px;
+  color: #6A6959;
+}
+#bg_header > .headright {
+  height: 100%;
+  width: 45%;
+  line-height: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#bg_header > .wrong {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #E6FDFF;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+#bg_header:hover {
+  box-shadow: 0px 3px 3px 2px #1CC024 ;
+}
+#bg_bgc {
+  height: 400px;
+  width: 100%;
+  background: url("../images/bg1.jpg") no-repeat center center;
+}
+.navbar-default {
+  position: absolute;
+  top: 350px;
+  left: 0px;
+  width: 100%;
+  background-image: linear-gradient(to top, #307F41, #327D42);
+  border: 0;
+}
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:focus {
+  background-color: #fff;
+  border: none;
+}
+.navbar-default .navbar-brand,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li a:hover,
+.navbar-default .navbar-nav > li a:focus {
+  color: #fff;
+  border: 0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active a:hover,
+.navbar-default .navbar-nav > .active a:focus {
+  color: green;
+  background-color: #fff;
+}

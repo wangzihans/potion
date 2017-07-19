@@ -1,0 +1,11 @@
+$(function(){
+    //顶部导航栏
+    $(".wrong").click(function(){
+        $(this).parent().hide();
+    })
+    //导航栏效果
+    $(".navbar-nav>li").click(function(){
+        $(".navbar-nav>li").removeClass("active");
+        $(this).addClass("active");
+    })
+})
